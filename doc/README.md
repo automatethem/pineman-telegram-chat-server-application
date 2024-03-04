@@ -37,7 +37,7 @@ http://localhost:3000
 
 ## vercel
 
-https://pineman-telegram-chat-server-app.vercel.application/
+https://pineman-telegram-chat-server-application.vercel.app
 
 ## github username
 
