@@ -10,7 +10,10 @@ export default function Page() {
 
         <div className="mb-3">
           <label className="block font-bold mb-1">vercel 웹 호스팅</label>
-          vercel 무료 웹 호스팅에 가입 및 직접 호스팅
+          그리고 지금은 제 계정에 웹 호스팅되어 있습니다.
+          <br/>
+          이제 이전해 드린 관리자 웹 사이트 리포지토리(-server-application)를 이거 보시고 무료 호스팅 받으시면 됩니다.
+          <br/>
           <a href="https://vercel.com" target="_blank">https://vercel.com</a>
           <img src="/admin/server-management/vercel/vercel-1.png" />        
           <img src="/admin/server-management/vercel/vercel-2.png" />
@@ -27,6 +30,9 @@ export default function Page() {
           <img src="/admin/server-management/vercel/vercel-11.png" />
           팁: 지역을 한국으로 바꾸시면 웹 사이트 응답이 더 빠릅니다.
           <img src="/admin/server-management/vercel/vercel-a1.png" />
+          완전 삭제시는 삭제 합니다.
+          <img src="/admin/server-management/vercel/vercel-12.png" />
+          <img src="/admin/server-management/vercel/vercel-13.png" />
         </div>
 
       </div>
