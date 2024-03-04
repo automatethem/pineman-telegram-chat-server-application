@@ -18,9 +18,9 @@ https://supabase.com/dashboard/project/gpmzleqeyyzoedxktpxc
 ## 실행
 
 ```
-//npx create-next-app pineman-telegram-chat-server-app
-//cd pineman-telegram-chat-server-app
-cd pineman-telegram-chat-server-app
+//npx create-next-app pineman-telegram-chat-server-application
+//cd pineman-telegram-chat-server-application
+cd pineman-telegram-chat-server-application
 ```
 
 ```
@@ -37,9 +37,7 @@ http://localhost:3000
 
 ## vercel
 
-https://vercel.com/my-team-b0819e8f/pineman-telegram-chat-server-app
-
-https://pineman-telegram-chat-server-app.vercel.app/
+https://pineman-telegram-chat-server-app.vercel.application/
 
 ## github username
 
@@ -47,4 +45,4 @@ luckytasters0h
 
 ## github transfer
 
-https://github.com/luckytasters0h/pineman-telegram-chat-server-app
+https://github.com/luckytasters0h/pineman-telegram-chat-server-application
