@@ -43,9 +43,9 @@ http://localhost:3000
 
 https://github.com/luckytasters0h/pineman-telegram-chat-server-application
 
-luckytasters0h
+github 사용자 이름: luckytasters0h
 
-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
+github 액세스 토큰: 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
 
 ### vercel
 
