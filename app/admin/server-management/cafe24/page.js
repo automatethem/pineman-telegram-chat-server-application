@@ -14,18 +14,34 @@ export default function Page() {
         </div>
     
         <div className="mb-3">
-          <label className="block font-bold mb-1">카페 24 서버 호스팅</label>
-          카페 24 월 5000원 서버 호스팅에 가입 및 호스팅
+          <label className="block font-bold mb-1">카페 24 가입</label>
+          <p>카페에 가입</p>
           <a href="https://hosting.cafe24.com/?controller=new_product_page&page=virtual" target="_blank">https://hosting.cafe24.com/?controller=new_product_page&page=virtual</a>
+          <br/>        
           <img src="/admin/server-management/cafe24/cafe24-1.png" />        
-          봇이 미응답시 시스템을 종료후 다시 시작 합니다. 
-          나의서비스 관리 페이지 접속 &gt; 서버 원격 관리 클릭
-          <img src="/admin/server-management/cafe24/cafe24-2.png" />
-          <img src="/admin/server-management/cafe24/cafe24-3.png" />
-          <img src="/admin/server-management/cafe24/cafe24-4.png" />
-          장시간 미사용시 종료 합니다. 
         </div>
 
+        <div className="mb-3">
+          <label className="block font-bold mb-1">카페 24 서버 호스팅</label>
+          <p>카페 24 월 5000원 서버 호스팅에 호스팅</p>     
+          <p>봇이 미응답시 시스템을 종료후 다시 시작 합니다.</p> 
+          <p>나의서비스 관리 페이지 접속 &gt; 서버 원격 관리 클릭</p>
+          <img src="/admin/server-management/cafe24/cafe24-2.png" />
+          <br/>
+          <img src="/admin/server-management/cafe24/cafe24-3.png" />
+          <br/>
+          <img src="/admin/server-management/cafe24/cafe24-4.png" />
+          <p>장시간 미사용시 종료 합니다.</p> 
+        </div>
+
+        <div className="mb-3">
+          <p className="block font-bold mb-1">카페 24 서버 콘솔 접속</p>
+          <p>pem 파일을 다운 받아 콘솔 (윈도우에서는 파워셀)에서 아래 명령어로 접속 하면 됩니다.</p>
+          <p>ssh -i "/Users/xxx/Documents/cafe24/xxx.pem" ubuntu@111.222.333.444</p>
+          <br/>
+          <img src="/admin/server-management/cafe24/cafe24-5.png" />
+        </div>
+            
       </div>
   );
 }
