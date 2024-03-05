@@ -36,8 +36,8 @@ export default function Page() {
 
         <div className="mb-3">
           <p className="block font-bold mb-1">카페 24 서버 콘솔 접속</p>
-          <p>pem 파일을 다운 받아 콘솔 (윈도우에서는 파워셀)에서 아래 명령어로 접속 하면 됩니다.</p>
-          <p>ssh -i "/Users/xxx/Documents/cafe24/xxx.pem" ubuntu@111.222.333.444</p>
+          <p>pem 파일을 다운 받아 콘솔 (윈도우에서는 파워셀)에서 아래 명령어로 접속 하면 됩니다. 아래 xxx 대신 카페24 아이디 사용</p>
+          <p>ssh root@xxx.cafe24.com</p>
           <br/>
           <img src="/admin/server-management/cafe24/cafe24-5.png" />
         </div>
