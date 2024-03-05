@@ -39,13 +39,11 @@ http://localhost:3000
 
 ## customer
 
-### username
-
-luckytasters0h
-
 ### github
 
 https://github.com/luckytasters0h/pineman-telegram-chat-server-application
+
+luckytasters0h
 
 ### vercel
 
