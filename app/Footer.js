@@ -1,13 +1,3 @@
-"use client";
-import React, { useState, useEffect } from 'react';
+import Page from "./Footers/blank/Footer.js";
 
-const Footer = () => {
-
-  return (
-    <> 
-    <hr/>
-    푸터
-    </>
-  );
-};
-export default Footer;
+export default Page;

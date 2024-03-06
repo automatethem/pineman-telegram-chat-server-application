@@ -1,9 +1,3 @@
-//"use client"
+import Page from "./pages/blank/page.js";
 
-const App = () => (
-  <>
-  <p>홈</p>
-  </>
-)
-      
-export default App;
+export default Page;
