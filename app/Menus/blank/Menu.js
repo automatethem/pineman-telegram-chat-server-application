@@ -30,6 +30,9 @@ const Menu = () => {
   if (loading)
     return <>loading</>;
 
+  if (window.location.pathname === '/chat/web-chat') 
+    return null;
+
   return (
     <>
     <div className="navbar bg-base-100">
