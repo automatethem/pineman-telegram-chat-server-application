@@ -16,6 +16,7 @@ const Page = () => {
   </li>
 </ul>
 
+{/*
 <ul className="menu bg-base-200 w-56 rounded-box mb-3">
   <li>
     <h2 className="menu-title"><a href="/admin/command/info-command">정보 명령 관리</a></h2>
@@ -24,6 +25,7 @@ const Page = () => {
     </ul>
   </li>
 </ul>
+*/}
 
 <ul className="menu bg-base-200 w-56 rounded-box mb-3">
   <li>
