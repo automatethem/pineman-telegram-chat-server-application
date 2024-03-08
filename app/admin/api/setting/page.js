@@ -59,7 +59,8 @@ export default function Page() {
 	  
       <div className="mb-3">
         <label className="block font-bold mb-1">Api Url</label>
-	<p>예) https://example-web-chat-app.vercel.app</p>
+	<p>vercel 무료 웹 호스팅을 사용하지 않는 경우만 웹 사이트 주소 입력</p>
+	<p>예) https://novercelwebsite.com</p>
         <input
           type="text"
           value={apiUrl}
