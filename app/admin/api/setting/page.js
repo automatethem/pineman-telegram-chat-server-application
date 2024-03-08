@@ -58,15 +58,11 @@ export default function Page() {
       <p className="mb-3 text-lg font-bold">Api 관리 &gt; 설정</p>
 
       <div className="mb-3">
-        <label className="block font-bold mb-1">vercel 무료 웹 호스팅을 사용하는 경우</label>
-	<p>Vercel 인증 비활성화</p>
+        <label className="block font-bold mb-1">Api Url (웹 사이트 주소)</label>
+	<p>Vercel 무료 웹 호스팅을 사용하는 경우 Vercel 인증 비활성화</p>
         <img src="/admin/api/setting/1.png"/><br/>
         <img src="/admin/api/setting/2.png"/>
-      </div>
-	  
-      <div className="mb-3">
-        <label className="block font-bold mb-1">vercel 무료 웹 호스팅을 사용하지 않는 경우</label>
-	<p>Api Url (웹 사이트 주소) 입력</p>
+	<p>다른 웹 호스팅을 사용하는 경우 Api Url (웹 사이트 주소) 입력</p>
 	<p>예) https://novercelwebsite.com</p>
         <input
           type="text"
