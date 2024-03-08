@@ -1,7 +1,6 @@
-CREATE TABLE "AiCommandSetting" (
+CREATE TABLE "AiSetting" (
     "id"    serial primary key,
-    "useAiCommand" BOOLEAN DEFAULT FALSE,
-    "aiCommand" TEXT DEFAULT '/질문',
+    "useAi" BOOLEAN DEFAULT FALSE,
     "aiSystemPrompt" TEXT DEFAULT '당신은 도우미 챗봇 입니다.',
     "useOpenai" BOOLEAN DEFAULT FALSE,
     "openaiModel" TEXT DEFAULT 'gpt-4',
@@ -12,7 +11,7 @@ CREATE TABLE "AiCommandSetting" (
     "useWebbrowserTool" BOOLEAN DEFAULT FALSE
 );
 
-CREATE TABLE "AiCommandMessageLog" (
+CREATE TABLE "AiMessageLog" (
     "id"    serial primary key,
     "message" TEXT DEFAULT '',
     "reply" TEXT DEFAULT '',
