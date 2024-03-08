@@ -1,4 +1,4 @@
 CREATE TABLE "ApiSetting" (
     "id"    serial primary key,
-    "apiUrl" TEXT DEFAULT 'https://example-web-chat-app.vercel.app'
+    "apiUrl" TEXT DEFAULT ''
 );
