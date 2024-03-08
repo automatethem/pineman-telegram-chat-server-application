@@ -24,7 +24,15 @@ const Page = () => {
         <br/>
         <img src="/admin/server-management/supabase/4.png" />        
       </div>
-          
+
+      <div className="mb-3">
+        <p className="block font-bold mb-1">수동 가입</p>
+
+        <img src="/admin/server-management/supabase/6.png" />
+        <br/>
+        <img src="/admin/server-management/supabase/7.png" />        
+      </div>
+  
     </div>
   );
 };
