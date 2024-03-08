@@ -68,7 +68,7 @@ export default function Page() {
 
   return (
     <div>
-      <p className="mb-3 text-lg font-bold">AI 명령 관리 &gt; 파인 튜닝 관리</p>
+      <p className="mb-3 text-lg font-bold">AI 관리 &gt; 파인 튜닝 관리</p>
 
       <div className="mb-3">
         <table>
