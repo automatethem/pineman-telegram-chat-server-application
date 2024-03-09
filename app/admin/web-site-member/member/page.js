@@ -27,7 +27,7 @@ const Page = () => {
     setLoading(true);
     const { data, error } = await supabase.auth.admin.listUsers();
     if (error) {
-      console.error('사용자 목록을 가져오는데 실패했습니다.', error);
+      console.error('회원 목록을 가져오는데 실패했습니다.', error);
       setLoading(false);
       return;
     }
@@ -36,15 +36,15 @@ const Page = () => {
   };
 
   const deleteUser = async (userId) => {
-    if (window.confirm("정말로 이 사용자를 삭제하시겠습니까?")) {
+    if (window.confirm("정말로 이 회원을 삭제하시겠습니까?")) {
       setLoading(true);
       const { error } = await supabase.auth.admin.deleteUser(userId);
       if (error) {
-        console.error('사용자 삭제에 실패했습니다.', error.message);
+        console.error('회원 삭제에 실패했습니다.', error.message);
       } 
       else {
-        alert('사용자가 성공적으로 삭제되었습니다.');
-        fetchUsers(); // 사용자 목록을 다시 가져옵니다.
+        alert('회원이 성공적으로 삭제되었습니다.');
+        fetchUsers(); // 회원 목록을 다시 가져옵니다.
       }
       setLoading(false);
     }
