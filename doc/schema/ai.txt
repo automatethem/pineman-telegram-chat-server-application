@@ -1,7 +1,7 @@
 CREATE TABLE "AiSetting" (
     "id"    serial primary key,
     "useAi" BOOLEAN DEFAULT FALSE,
-    "aiSystemPrompt" TEXT DEFAULT '당신은 도우미 챗봇 입니다.',
+    "systemPrompt" TEXT DEFAULT '당신은 도우미 챗봇 입니다.',
     "useOpenai" BOOLEAN DEFAULT FALSE,
     "openaiModel" TEXT DEFAULT 'gpt-4',
     "openaiApiKey" TEXT DEFAULT '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',
