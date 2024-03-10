@@ -1,3 +1,3 @@
-import Page from "./Menus/blank/Menu.js";
+import Page from "./Menus/chat/Menu.js";
 
 export default Page;
