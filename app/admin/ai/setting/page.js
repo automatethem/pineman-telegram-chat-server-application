@@ -7,7 +7,7 @@ const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL, process.env.
 export default function Page() {
   const [id, setId] = useState(null); 
   const [useAi, setUseAi] = useState(false);
-  const [aiSystemPrompt, setAiSystemPrompt] = useState('');
+  const [systemPrompt, setSystemPrompt] = useState('');
   const [useOpenai, setUseOpenai] = useState(false);
   const [openaiModel, setOpenaiModel] = useState(false);
   const [openaiApiKey, setOpenaiApiKey] = useState('');
@@ -27,7 +27,7 @@ export default function Page() {
       const {
         id,
         useAi,
-        aiSystemPrompt,
+        systemPrompt,
       	useOpenai,
 	      openaiModel,
       	openaiApiKey,
@@ -38,7 +38,7 @@ export default function Page() {
       } = data;
       setId(id);
       setUseAi(useAi);
-      setAiSystemPrompt(aiSystemPrompt);
+      setSystemPrompt(systemPrompt);
       setUseOpenai(useOpenai);
       setOpenaiModel(openaiModel);
       setOpenaiApiKey(openaiApiKey);
@@ -61,7 +61,7 @@ export default function Page() {
       .from('AiSetting')
       .update({
         useAi: useAi,
-        aiSystemPrompt: aiSystemPrompt,
+        systemPrompt: systemPrompt,
         useOpenai: useOpenai,
 	      openaiModel: openaiModel,
         openaiApiKey: openaiApiKey,
@@ -101,8 +101,8 @@ export default function Page() {
       <div className="mb-3">
         <label className="block font-bold mb-1">시스템 프롬프트</label>
         <textarea
-          value={aiSystemPrompt}
-          onChange={(e) => setAiSystemPrompt(e.target.value)}
+          value={systemPrompt}
+          onChange={(e) => setSystemPrompt(e.target.value)}
           className="w-full shadow py-2 px-3 border h-72"
         />
       </div>
