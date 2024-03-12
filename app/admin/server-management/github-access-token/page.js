@@ -15,6 +15,7 @@ export default function Page() {
         </div>
     
         <div className="mb-3">
+          <p>아래 보시고 github 액세스 토큰 알려주시면 이전에 드린 텔레그램 봇 소스 (-client-application) 를 aws (혹은 카페24) 에 적용해드리겠습니다.</p>  
           <p>github 소스 코드 리포지토리 호스팅에 가입 <a href="https://github.com" target="_blank">https://github.com</a></p>
           <img src="/admin/server-management/github-access-token/1.png" />
           <br/>

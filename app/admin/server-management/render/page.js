@@ -33,9 +33,27 @@ export default function Page() {
           <br/>
           <img src="/admin/server-management/render/10.png" />
           <br/>
+          <a href="https://xxx-model-client-app.onrender.com/api/fastapi/api/docs" target="_blank">https://xxx-model-client-app.onrender.com/api/fastapi/api/docs</a>
+          <br/>        
           <img src="/admin/server-management/render/11.png" />
         </div>
 
+        <div className="mb-3">
+          <label className="block font-bold mb-1">uptimerobot</label>
+          <br/>
+          무료 5분 간격 접속으로 render 무료 웹 호스팅 비활성화 방지
+          <br/>
+          <a href="https://uptimerobot.com" target="_blank">https://uptimerobot.com</a>
+          <br/>
+          <img src="/admin/server-management/render/2-1.png" />
+          <br/>
+          <img src="/admin/server-management/render/2-2.png" />
+          <br/>
+          <a href="https://xxx-model-client-app.onrender.com/api/fastapi/api/docs" target="_blank">https://xxx-model-client-app.onrender.com/api/fastapi/api/docs</a>
+          <br/> 
+          <img src="/admin/server-management/render/2-3.png" />
+        </div>
+            
       </div>
   );
 }
