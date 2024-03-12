@@ -29,6 +29,8 @@ export default function Page() {
           <br/>
           <img src="/admin/server-management/render/8.png" />
           <br/>
+          uvicorn api.fastapi.api.index:app --host 0.0.0.0 --port $PORT
+          <br/>
           <img src="/admin/server-management/render/9.png" />
           <br/>
           <img src="/admin/server-management/render/10.png" />
