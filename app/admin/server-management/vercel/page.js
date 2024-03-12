@@ -15,10 +15,9 @@ export default function Page() {
           이제 이전해 드린 관리자 웹 사이트 리포지토리(-server-application)를 이거 보시고 무료 호스팅 받으시면 됩니다.
           <br/>
           <a href="https://vercel.com" target="_blank">https://vercel.com</a>
-          <img src="/admin/server-management/vercel/vercel-1.png" />        
-          <img src="/admin/server-management/vercel/vercel-2.png" />
+          <img src="/admin/server-management/vercel/vercel-1.png" />   
           관리 웹 사이트가 제작 완료 되면 지텁으로 이전해 드리는 리포지토리를 추가해 직접 웹 호스팅 받으면 됩니다.
-          <img src="/admin/server-management/vercel/vercel-3.png" />
+          <img src="/admin/server-management/vercel/vercel-2.png" />
           <img src="/admin/server-management/vercel/vercel-4.png" />
           <img src="/admin/server-management/vercel/vercel-5.png" />
           <img src="/admin/server-management/vercel/vercel-6.png" />
