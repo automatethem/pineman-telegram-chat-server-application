@@ -30,9 +30,6 @@ export default function Page() {
           <img src="/admin/server-management/vercel/vercel-11.png" />
           팁: 지역을 한국으로 바꾸시면 웹 사이트 응답이 더 빠릅니다.
           <img src="/admin/server-management/vercel/vercel-a1.png" />
-          완전 삭제시는 삭제 합니다.
-          <img src="/admin/server-management/vercel/vercel-12.png" />
-          <img src="/admin/server-management/vercel/vercel-13.png" />
         </div>
 
       </div>
