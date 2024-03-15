@@ -138,6 +138,8 @@ export default function Page() {
           checked={useCoinPriceCommandCoinbase}
           onChange={(e) => setUseCoinPriceCommandCoinbase(e.target.checked)}
         />
+	<img src="/admin/command/info-command/setting/coinbase1.png"/><br/>
+	<img src="/admin/command/info-command/setting/coinbase2.png"/>
       </div>
 
       <div className="mb-3">
