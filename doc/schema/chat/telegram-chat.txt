@@ -1,13 +1,3 @@
-CREATE TABLE "TelegramChatMember" (
-    "id"    serial primary key,
-    "memberId" BIGINT UNIQUE,
-    "nickName" TEXT,
-    "point" INT DEFAULT 0,
-    "attendanceCount" INT DEFAULT 0,
-    "messageCount" INT DEFAULT 0,
-    "date" TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
-);
-
 CREATE TABLE "TelegramChatSetting" (
     "id"    serial primary key,
     "useWelcomeMessage" BOOLEAN DEFAULT TRUE,
@@ -28,16 +18,21 @@ xxx 입니다
     "removePreviousWelcomeMessage"   BOOLEAN DEFAULT FALSE,
     "useHelpMessage" BOOLEAN DEFAULT TRUE,
     "helpMessage" TEXT DEFAULT '도움말
+
 출석 명령어:
 /출석
 /출석체크
 /출첵
+
 내정보 명령어:
 /내정보
+
 랭킹 명령어:
 /랭킹
+
 선물 명령어 (수수료 10%):
 /선물 금액 예) /선물 1000
+
 도움말 명령어:
 /도움말
 
@@ -78,6 +73,16 @@ xxx 입니다
     "chatId" BIGINT DEFAULT -4101401111,
     "useBot" BOOLEAN DEFAULT TRUE,
     "botToken" TEXT DEFAULT '6688581111:AAEqR22229cjTQud1ZYqr3Zo7ZjUHmr2222'
+);
+
+CREATE TABLE "TelegramChatMember" (
+    "id"    serial primary key,
+    "memberId" BIGINT UNIQUE,
+    "nickName" TEXT,
+    "point" INT DEFAULT 0,
+    "attendanceCount" INT DEFAULT 0,
+    "messageCount" INT DEFAULT 0,
+    "date" TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE "TelegramChatWelcomeMessageButton" (
