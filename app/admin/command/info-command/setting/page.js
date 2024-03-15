@@ -15,6 +15,7 @@ export default function Page() {
   const [coinbaseSecret, setCoinbaseSecret] = useState(false);
   const [useMarketCapitalizationCommand, setUseMarketCapitalizationCommand] = useState(false);
   const [coinMarketCapApiKey, setCoinMarketCapApiKey] = useState(false);	
+  const [useFortuneCommand, setUseFortuneCommand] = useState(false);	
   const [loading, setLoading] = useState(true);
 
   const fetchSettings = async () => {
@@ -34,7 +35,8 @@ export default function Page() {
         coinbaseApiKey,
         coinbaseSecret,
 	useMarketCapitalizationCommand,
-	coinMarketCapApiKey
+	coinMarketCapApiKey,
+  useFortuneCommand
       } = data; 
       setId(id);
       setUseInfoCommand(useInfoCommand);
@@ -45,7 +47,8 @@ export default function Page() {
       setCoinbaseApiKey(coinbaseApiKey);
       setCoinbaseSecret(coinbaseSecret);
       setUseMarketCapitalizationCommand(useMarketCapitalizationCommand);
-      setCoinMarketCapApiKey(coinMarketCapApiKey);   
+      setCoinMarketCapApiKey(coinMarketCapApiKey);  
+      setUseFortuneCommand(useFortuneCommand);  
     }
     setLoading(false);
   };
@@ -68,7 +71,8 @@ export default function Page() {
         coinbaseApiKey: coinbaseApiKey,
         coinbaseSecret: coinbaseSecret,
 	useMarketCapitalizationCommand: useMarketCapitalizationCommand,
-        coinMarketCapApiKey: coinMarketCapApiKey
+        coinMarketCapApiKey: coinMarketCapApiKey,
+        useFortuneCommand: useFortuneCommand
       })
       .match({ id: id });
 
@@ -138,6 +142,8 @@ export default function Page() {
 
       <div className="mb-3">
         <label className="block font-bold mb-1">코인베이스 api key</label>
+        <p>api 키 만들기: <a href="https://www.coinbase.com/settings/api" target="_blank">https://www.coinbase.com/settings/api</a></p>
+        <p>New API Key - Accounts: all 체크, Permissions: 모두 체크</p>
         <input 
           type="text"
           value={coinbaseApiKey}
@@ -176,7 +182,17 @@ export default function Page() {
           className="w-full shadow py-2 px-3 border"
         />
       </div>
-                  
+
+      <div className="mb-3">
+        <label className="block font-bold mb-1">운세 명령 사용</label>
+        <input
+          type="checkbox"
+          checked={useFortuneCommand}
+          onChange={(e) => setUseFortuneCommand(e.target.checked)}
+        />
+        <img src="/admin/command/info-command/setting/fortune.png"/>
+      </div>
+
       <button
         type="submit"
         className="shadow py-2 px-3 border bg-blue-500"
