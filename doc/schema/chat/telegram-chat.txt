@@ -1,6 +1,6 @@
 CREATE TABLE "TelegramChatSetting" (
     "id"    serial primary key,
-    "useWelcomeMessage" BOOLEAN DEFAULT TRUE,
+    "useWelcomeMessage" BOOLEAN DEFAULT FALSE,
     "welcomeMessage" TEXT DEFAULT '{nick-name} 님 반갑습니다. 
 xxx 입니다
 
@@ -16,7 +16,7 @@ xxx 입니다
     "useWelcomeMessageImage" BOOLEAN DEFAULT FALSE,
     "welcomeMessageImageUrl" TEXT DEFAULT '',
     "removePreviousWelcomeMessage"   BOOLEAN DEFAULT FALSE,
-    "useHelpMessage" BOOLEAN DEFAULT TRUE,
+    "useHelpMessage" BOOLEAN DEFAULT FALSE,
     "helpMessage" TEXT DEFAULT '도움말
 
 출석 명령어:
@@ -37,32 +37,32 @@ xxx 입니다
 /도움말
 
 명령어 앞에 / 대신 . 사용 가능',
-    "useAttendanceMessage" BOOLEAN DEFAULT TRUE,
+    "useAttendanceMessage" BOOLEAN DEFAULT FALSE,
     "attendanceMessage" TEXT DEFAULT '출석 완료! {attendance-message-point} 포인트가 적립되었습니다. 현재 포인트: {current-point} 포인트',
     "attendanceMessagePoint" INT DEFAULT 1000,
     "useAttendanceMessageImage" BOOLEAN DEFAULT FALSE,
     "attendanceMessageImageUrl" TEXT DEFAULT '',
-    "useRandomMessagePoint" BOOLEAN DEFAULT TRUE,
+    "useRandomMessagePoint" BOOLEAN DEFAULT FALSE,
     "startRandomMessagePoint" INT DEFAULT 100,
     "endRandomMessagePoint" INT DEFAULT 500,
     "randomMessagePointPercent" INT DEFAULT 50,
     "randomMessagePointMessage" TEXT DEFAULT '랜덤 메시지 포인트 **{random-message-point}** 포인트가 적립되었습니다. 현재 포인트: {current-point} 포인트',
-    "usePresent" BOOLEAN DEFAULT TRUE,
+    "usePresent" BOOLEAN DEFAULT FALSE,
     "presentComissionPercent" FLOAT DEFAULT 0,
-    "useMyInfoMessage" BOOLEAN DEFAULT TRUE,
+    "useMyInfoMessage" BOOLEAN DEFAULT FALSE,
     "myInfoMessage" TEXT DEFAULT '닉네임: {nick-name}
 보유 포인트: {point}
 출석 일수: {attendance-count} 일
 오늘의 채팅: {today-message-count}
 주간 채팅: {week-message-count}',
-    "useRanking" BOOLEAN DEFAULT TRUE,
+    "useRanking" BOOLEAN DEFAULT FALSE,
     "rankingTitle" TEXT DEFAULT '포인트 랭킹:
 ',
     "rankingLineMessage" TEXT DEFAULT '{rank}위 {nick-name} {point} 포인트
 ',
     "useDayMessageCountLimit" BOOLEAN DEFAULT FALSE,
     "dayMessageCountLimit" INT DEFAULT 2,
-    "useDayMessageCountLimitMessage" BOOLEAN DEFAULT TRUE,
+    "useDayMessageCountLimitMessage" BOOLEAN DEFAULT FALSE,
     "dayMessageCountLimitMessage" TEXT DEFAULT '하루 최대 {day-message-count-limit} 개의 글만 쓸 수 있습니다.',
     "messageLockMessage" TEXT DEFAULT '관리자에 의해 메시지 락이 걸려 {date} 까지 글을 쓸 수 없습니다.',
     "usePeriodicMessage" BOOLEAN DEFAULT FALSE,
@@ -71,7 +71,7 @@ xxx 입니다
     "usePeriodicMessageImage" BOOLEAN DEFAULT FALSE,
     "periodicMessageImageUrl" TEXT DEFAULT '',
     "chatId" BIGINT DEFAULT -4101401111,
-    "useBot" BOOLEAN DEFAULT TRUE,
+    "useBot" BOOLEAN DEFAULT FALSE,
     "botToken" TEXT DEFAULT '6688581111:AAEqR22229cjTQud1ZYqr3Zo7ZjUHmr2222'
 );
 
