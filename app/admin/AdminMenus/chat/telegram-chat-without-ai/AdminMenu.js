@@ -6,10 +6,10 @@ const Page = () => {
     <h2 className="menu-title"><a href="/admin/chat/telegram-chat">텔레그램 챗 관리</a></h2>
     <ul>
         <li><a href="/admin/chat/telegram-chat/member">회원 관리</a></li>
-        <li><a href="/admin/chat/telegram-chat/setting">설정</a></li>
         <li><a href="/admin/chat/telegram-chat/welcome-message-button">환영 메시지 버튼 관리</a></li>
         <li><a href="/admin/chat/telegram-chat/day-message-count-limit-exception">하루 메시지수 제한 예외 관리</a></li>
         <li><a href="/admin/chat/telegram-chat/message-lock">메시지 락 관리</a></li>
+        <li><a href="/admin/chat/telegram-chat/setting">설정</a></li>
         <li><a href="/admin/chat/telegram-chat/connect">텔레그램 연동 방법</a></li>
         <li><a href="/admin/chat/telegram-chat/markdown">마크다운 사용 방법</a></li>
     </ul>
