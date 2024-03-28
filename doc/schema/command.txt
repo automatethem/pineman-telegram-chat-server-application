@@ -8,6 +8,6 @@ CREATE TABLE "CommandSetting" (
     "coinbaseApiKey" TEXT DEFAULT '',
     "coinbaseSecret" TEXT DEFAULT '',
     "useMarketCapitalizationCommand" BOOLEAN DEFAULT FALSE,
-    "coinMarketCapApiKey" TEXT DEFAULT 'd02b1111-8e74-4b32-9834-c8e4c202222',
+    "coinMarketCapApiKey" TEXT DEFAULT '11111111-1111-1111-1111-11111111111',
     "useFortuneCommand" BOOLEAN DEFAULT FALSE
 );
