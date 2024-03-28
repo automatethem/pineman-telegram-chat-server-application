@@ -118,7 +118,7 @@ export default function Page() {
           checked={useCoinPriceSimpleMessage}
           onChange={(e) => setUseCoinPriceSimpleMessage(e.target.checked)}
         />
-	      <img src="/admin/command/info-command/setting/coin-price-message1.png"/>
+	      <img src="/admin/command/setting/coin-price-message1.png"/>
       </div>
 
       <div className="mb-3">
@@ -128,7 +128,7 @@ export default function Page() {
           checked={useCoinPriceOhlcvMessage}
           onChange={(e) => setUseCoinPriceOhlcvMessage(e.target.checked)}
         />
-	      <img src="/admin/command/info-command/setting/coin-price-message2.png"/>
+	      <img src="/admin/command/setting/coin-price-message2.png"/>
       </div>
 
       <div className="mb-3">
@@ -138,8 +138,8 @@ export default function Page() {
           checked={useCoinPriceCommandCoinbase}
           onChange={(e) => setUseCoinPriceCommandCoinbase(e.target.checked)}
         />
-	<img src="/admin/command/info-command/setting/coinbase1.png"/><br/>
-	<img src="/admin/command/info-command/setting/coinbase2.png"/>
+	<img src="/admin/command/setting/coinbase1.png"/><br/>
+	<img src="/admin/command/setting/coinbase2.png"/>
       </div>
 
       <div className="mb-3">
@@ -171,7 +171,7 @@ export default function Page() {
           checked={useMarketCapitalizationCommand}
           onChange={(e) => setUseMarketCapitalizationCommand(e.target.checked)}
         />
-        <img src="/admin/command/info-command/setting/market-capitalization.png"/>
+        <img src="/admin/command/setting/market-capitalization.png"/>
       </div>
 
       <div className="mb-3">
@@ -192,7 +192,7 @@ export default function Page() {
           checked={useFortuneCommand}
           onChange={(e) => setUseFortuneCommand(e.target.checked)}
         />
-        <img src="/admin/command/info-command/setting/fortune.png"/>
+        <img src="/admin/command/setting/fortune.png"/>
       </div>
 
       <button
