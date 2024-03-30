@@ -27,3 +27,10 @@ CREATE TABLE "AiRag" (
     "queryName" VARCHAR(255) DEFAULT 'match_service_documents',
     "date" TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 );
+
+CREATE TABLE "AiRagMessage" (
+    "id"    serial primary key,
+    "title" VARCHAR(255) DEFAULT '',
+    "message" TEXT DEFAULT '',
+    "date" TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
