@@ -9,12 +9,13 @@ export default function Page() {
   const [useAi, setUseAi] = useState(false);
   const [systemPrompt, setSystemPrompt] = useState('');
   const [useOpenai, setUseOpenai] = useState(false);
-  const [openaiModel, setOpenaiModel] = useState(false);
+  const [openaiModelName, setOpenaiModelName] = useState(false);
   const [openaiApiKey, setOpenaiApiKey] = useState('');
   const [useCoinPriceTool, setUseCoinPriceTool] = useState(false);
   const [useTavilysearchTool, setUseTavilysearchTool] = useState(false);
   const [tavilysearchToolApiKey, setTavilysearchToolApiKey] = useState('');
   const [useWebbrowserTool, setUseWebbrowserTool] = useState(false);
+  const [useMessageLog, setUseMessageLog] = useState(false);
   const [loading, setLoading] = useState(true);
 
   const fetchSettings = async () => {
@@ -29,23 +30,25 @@ export default function Page() {
         useAi,
         systemPrompt,
       	useOpenai,
-	      openaiModel,
+	      openaiModelName,
       	openaiApiKey,
         useCoinPriceTool,
         useTavilysearchTool,
 	      tavilysearchToolApiKey,
-        useWebbrowserTool
+        useWebbrowserTool,
+	      useMessageLog
       } = data;
       setId(id);
       setUseAi(useAi);
       setSystemPrompt(systemPrompt);
       setUseOpenai(useOpenai);
-      setOpenaiModel(openaiModel);
+      setOpenaiModelName(openaiModelName);
       setOpenaiApiKey(openaiApiKey);
       setUseCoinPriceTool(useCoinPriceTool);
       setUseTavilysearchTool(useTavilysearchTool);
       setTavilysearchToolApiKey(tavilysearchToolApiKey);
       setUseWebbrowserTool(useWebbrowserTool);
+      setUseMessageLog(useMessageLog);
     }
     setLoading(false);
   };
@@ -63,12 +66,13 @@ export default function Page() {
         useAi: useAi,
         systemPrompt: systemPrompt,
         useOpenai: useOpenai,
-	      openaiModel: openaiModel,
+	      openaiModelName: openaiModelName,
         openaiApiKey: openaiApiKey,
         useCoinPriceTool: useCoinPriceTool,
         useTavilysearchTool: useTavilysearchTool,
         tavilysearchToolApiKey: tavilysearchToolApiKey,
-        useWebbrowserTool: useWebbrowserTool
+        useWebbrowserTool: useWebbrowserTool,
+        useMessageLog: useMessageLog
       })
       .match({ id: id });
 
@@ -117,13 +121,15 @@ export default function Page() {
       </div>
 
       <div className="mb-3">
-        <label className="block font-bold mb-1">Openai 모델</label>  
-	<p>플레이 그라운드 (<a href="https://platform.openai.com/playground" target="_blank">https://platform.openai.com/playground</a>) 우측 상단 모델 리스트의 모델중 하나 선택</p>
+        <label className="block font-bold mb-1">Openai 모델 이름</label>  
+	<p>예) gpt-3.5-turbo</p>
+        <p>예) gpt-4</p>
+        <p>플레이 그라운드 (<a href="https://platform.openai.com/playground" target="_blank">https://platform.openai.com/playground</a>) 우측 상단 모델 리스트의 모델 이름중 하나 선택</p>
         <p>모델에 대한 세부 사항은 여기 (<a href="https://platform.openai.com/docs/models/overview" target="_blank">https://platform.openai.com/docs/models/overview</a>) 를 참고</p>
         <input
           type="text"
-          value={openaiModel}
-          onChange={(e) => setOpenaiModel(e.target.value)}
+          value={openaiModelName}
+          onChange={(e) => setOpenaiModelName(e.target.value)}
           className="w-full shadow py-2 px-3 border"
         />
       </div>
@@ -131,7 +137,7 @@ export default function Page() {
       <div className="mb-3">
         <label className="block font-bold mb-1">Openai api 키</label>
 	<p>api 키 만들기: <a href="https://platform.openai.com/api-keys" target="_blank">https://platform.openai.com/api-keys</a></p>
-        <p>api 키 만들고 신용 카드 등록후 충전해야 정상적으로 사용 가능:  <a href="https://platform.openai.com/account/billing/overview" target="_blank">https://platform.openai.com/account/billing/overview</a></p>
+        <p>api 키 만들고 신용 카드 등록후 충전해야 정상적으로 사용 가능:  <a href="https://platform.openai.com/account/billing/overview" target="_blank">https://platform.openai.com/account/billing/overview</a></p>	
         <input
           type="text"
           value={openaiApiKey}
@@ -183,7 +189,16 @@ export default function Page() {
           className="w-full shadow py-2 px-3 border"
         />
       </div>
-  
+
+      <div className="mb-3">
+        <label className="block font-bold mb-1">메시지 로그 사용</label>
+        <input
+          type="checkbox"
+          checked={useMessageLog}
+          onChange={(e) => setUseMessageLog(e.target.checked)}
+        />
+      </div>
+            
       <button
         type="submit"
         className="shadow py-2 px-3 border bg-blue-500"
