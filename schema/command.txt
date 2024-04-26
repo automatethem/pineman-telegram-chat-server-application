@@ -1,0 +1,13 @@
+CREATE TABLE "CommandSetting" (
+    "id"    serial primary key,
+    "useCommand" BOOLEAN DEFAULT FALSE,
+    "useCoinPriceCommand" BOOLEAN DEFAULT FALSE,
+    "useCoinPriceSimpleMessage" BOOLEAN DEFAULT FALSE,
+    "useCoinPriceOhlcvMessage" BOOLEAN DEFAULT FALSE,
+    "useCoinPriceCommandCoinbase" BOOLEAN DEFAULT FALSE,
+    "coinbaseApiKey" TEXT DEFAULT '',
+    "coinbaseSecret" TEXT DEFAULT '',
+    "useMarketCapitalizationCommand" BOOLEAN DEFAULT FALSE,
+    "coinMarketCapApiKey" TEXT DEFAULT '11111111-1111-1111-1111-11111111111',
+    "useFortuneCommand" BOOLEAN DEFAULT FALSE
+);
