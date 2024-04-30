@@ -23,15 +23,3 @@ CREATE TABLE "WebSiteSetting" (
 <p className="text-sm mb-2">고객센터: 010-1111-1111 abc@gmail.com</p>
 <p className="text-xs">Copyright © 2024 Abc Co. All rights reserved.</p>'
 );
-
-CREATE TABLE "WebSiteHideHeaderPage" (
-    "id"    serial primary key,
-    "page" VARCHAR(255) DEFAULT '/chat/ai-web-chat',
-    "date" TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
-);
-
-CREATE TABLE "WebSiteHideFooterPage" (
-    "id"    serial primary key,
-    "page" VARCHAR(255) DEFAULT '/chat/ai-web-chat',
-    "date" TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
-);
