@@ -16,7 +16,7 @@ export default function TelegramInfoPage() {
 
         <div className="mb-3">
           <label className="block font-bold mb-1">그룹 혹은 채널 챗 아이디 확인</label>
-          "텔레그램 웹"을 검색해서 텔레그램 웹버전으로 접속후 (<a href="https://web.telegram.org" target="_blank">https://web.telegram.org</a>) 왼쪽에서 원하는 그룹 혹은 채널을 선택한후 주소창 주소의 # 우측 숫자가 그룹 혹은 채널의 챗 아이디 입니다. 
+          "텔레그램 웹"을 검색해서 텔레그램 웹버전으로 접속후 (<a href="https://web.telegram.org/a" target="_blank">https://web.telegram.org/a</a>) 왼쪽에서 원하는 그룹 혹은 채널을 선택한후 주소창 주소의 # 우측 숫자가 그룹 혹은 채널의 챗 아이디 입니다. 
           <img src="/admin/chat/telegram-chat/connect/chat-id.png" />
         </div>
 
